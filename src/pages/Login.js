@@ -17,7 +17,7 @@ const Login = () => {
         e.preventDefault();
         if (validate()) {
             axios
-                .get("http://localhost:3000/user/" + username)
+                .get("http://localhost:3001/user/" + username)
                 .then((res) => {
                     localStorage.setItem("user", JSON.stringify(res.data));
                     usenavigate("/");

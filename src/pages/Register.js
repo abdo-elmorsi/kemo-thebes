@@ -60,7 +60,7 @@ const Register = () => {
         if (IsValidate()) {
             //console.log(regobj);
             axios
-                .post("http://localhost:3000/user", regobj)
+                .post("http://localhost:3001/user", regobj)
                 .then((res) => {
                     console.log(res);
                     toast.success("Registered successfully.");
@@ -70,7 +70,7 @@ const Register = () => {
                     console.log(error);
                     toast.error("Failed :" + error.message);
                 });
-            // fetch("http://localhost:3000/user", {
+            // fetch("http://localhost:3001/user", {
             //     method: "POST",
             //     headers: { "content-type": "application/json" },
             //     body: JSON.stringify(regobj),

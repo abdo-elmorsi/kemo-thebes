@@ -8,7 +8,7 @@ const Home = () => {
 
     useEffect(() => {
         axios
-            .get("http://localhost:3000/research")
+            .get("http://localhost:3001/research")
             .then((res) => {
                 setResearches(res.data);
             })
