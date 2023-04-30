@@ -1,55 +1,72 @@
 {
-    "user": [
-        {
-            "id": "abdo",
-            "name": "Abdo Elmorsy",
-            "password": "123456",
-            "email": "abdo@gmail.com",
-            "phone": "010101010",
-            "address": "",
-            "role": "admin",
-            "gender": "male"
-        },
-        {
-            "id": "so",
-            "name": "So M",
-            "password": "123456",
-            "email": "so@gmail.com",
-            "phone": "01010101010",
-            "address": "address1\naddrees2",
-            "role": "user",
-            "gender": "female"
-        },
-        {
-            "id": "abdo ahmed",
-            "name": "abdo elmorsy el",
-            "password": "123456",
-            "email": "ab@gmail.com",
-            "phone": "0111",
-            "address": "est\n",
-            "gender": "female"
-        }
-    ],
-    "research": [
-        {
-            "id": "title one",
-            "desc": "Desc one",
-            "start": "start of post",
-            "subject": "subject of post",
-            "end": "end of subject",
-            "resources": ["https:://wek", "https:://maw", "https:://arab"],
-            "user": "abdo",
-            "date": "Mon Apr 24 2023 03:25:59 GMT+0200 (Eastern European Standard Time)"
-        },
-        {
-            "id": "title two",
-            "desc": "Desc two",
-            "start": "start of post",
-            "subject": "subject of post",
-            "end": "end of subject",
-            "resources": ["https:://wek", "https:://maw", "https:://arab"],
-            "user": "abdo",
-            "date": "Mon Apr 24 2023 03:25:59 GMT+0200 (Eastern European Standard Time)"
-        }
-    ]
+  "user": [
+    {
+      "id": "abdo",
+      "name": "Abdo Elmorsy",
+      "password": "123456",
+      "email": "abdo@gmail.com",
+      "phone": "010101010",
+      "address": "",
+      "role": "admin",
+      "gender": "male"
+    },
+    {
+      "id": "so",
+      "name": "So M",
+      "password": "123456",
+      "email": "so@gmail.com",
+      "phone": "01010101010",
+      "address": "address1\naddrees2",
+      "role": "user",
+      "gender": "female"
+    },
+    {
+      "id": "abdo ahmed",
+      "name": "abdo elmorsy el",
+      "password": "123456",
+      "email": "ab@gmail.com",
+      "phone": "0111",
+      "address": "est\n",
+      "gender": "female"
+    },
+    {
+      "id": "kareem",
+      "name": "gomaa",
+      "password": "259200",
+      "email": "kareematef721@gmail.com",
+      "phone": "1210161804",
+      "address": "",
+      "gender": "female"
+    }
+  ],
+  "research": [
+    {
+      "id": "title one",
+      "desc": "Desc one",
+      "start": "start of post",
+      "subject": "subject of post",
+      "end": "end of subject",
+      "resources": [
+        "https:://wek",
+        "https:://maw",
+        "https:://arab"
+      ],
+      "user": "abdo",
+      "date": "Mon Apr 24 2023 03:25:59 GMT+0200 (Eastern European Standard Time)"
+    },
+    {
+      "id": "title two",
+      "desc": "Desc two",
+      "start": "start of post",
+      "subject": "subject of post",
+      "end": "end of subject",
+      "resources": [
+        "https:://wek",
+        "https:://maw",
+        "https:://arab"
+      ],
+      "user": "abdo",
+      "date": "Mon Apr 24 2023 03:25:59 GMT+0200 (Eastern European Standard Time)"
+    }
+  ]
 }

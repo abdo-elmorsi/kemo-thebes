@@ -9,7 +9,6 @@ const Profile = () => {
 
 		}
 	}, []);
-	console.log(user?.name);
 	return (
 		<div>
 			<main role="main">
