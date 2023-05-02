@@ -1,14 +1,33 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 const Profile = () => {
 	const [user, setUser] = useState({});
+	const [loading, setloading] = useState(true);
+	const [researches, setResearches] = useState([]);
 
 	useEffect(() => {
 		const user = localStorage.getItem("user");
 		if (user) {
 			setUser(JSON.parse(user));
-
 		}
+
+		axios
+			.get("http://localhost:3001/research")
+			.then((res) => {
+				setResearches(res.data);
+			})
+			.catch((error) => {
+				toast.error("No researches");
+			})
+			.finally(() => {
+				setloading(false);
+			});
 	}, []);
+
+
+
+
 	return (
 		<div>
 			<main role="main">
@@ -23,26 +42,20 @@ const Profile = () => {
 						</div>
 					</div>
 					<div className="row justify-content-around">
-						<div className="col-md-6">
-							<h2 className="featurette-heading">
-								First featurette heading.{" "}
-							</h2>
-							<p className="lead">
-								Some great placeholder content for the first
-								featurette here. Imagine some exciting prose
-								here.
-							</p>
-						</div>
-						<div className="col-md-6">
-							<h2 className="featurette-heading">
-								First featurette heading.{" "}
-							</h2>
-							<p className="lead">
-								Some great placeholder content for the first
-								featurette here. Imagine some exciting prose
-								here.
-							</p>
-						</div>
+						{loading ? (
+							<div>{"loading..."}</div>
+						) : (
+							researches?.map((ele) => {
+								return (
+									<div key={ele?.id} className="col-md-6">
+										<h2 className="featurette-heading">
+											{ele?.id}
+										</h2>
+										<p className="lead">{ele?.desc}</p>
+									</div>
+								);
+							})
+						)}
 					</div>
 				</div>
 			</main>
