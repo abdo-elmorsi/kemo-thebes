@@ -37,7 +37,7 @@ const Home = () => {
                             <div>{"loading..."}</div>
                         ) : (
                             <div
-                                className="d-flex justify-content-start align-items-center"
+                                className="d-flex flex-wrap justify-content-start align-items-center"
                                 style={{ gap: "20px" }}
                             >
                                 {researches?.map((ele, i) => {

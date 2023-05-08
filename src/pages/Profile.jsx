@@ -73,7 +73,7 @@ const Profile = () => {
 											Add
 										</button>
 									</div>
-									<div className="d-flex justify-content-start align-items-center" style={{ gap: "20px" }}>
+									<div className="d-flex flex-wrap justify-content-start align-items-center" style={{ gap: "20px" }}>
 										{researches.filter(c => c.user === user.id)?.map((ele, i) => {
 											return (
 												<div key={i} className="card" style={{ width: "18rem", height: "300px" }}>
